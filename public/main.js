@@ -14,6 +14,6 @@ app.controller('ChatCtrl',function($scope, socket){
   socket.on('get msg',function(data){
     $scope.msgs.push(data);
     console.log('ajout')
-    $scope.$digest();
+  
   })
 })
